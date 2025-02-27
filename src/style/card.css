@@ -1,0 +1,91 @@
+.card {
+  border-radius: 8px;
+  /* border: 1px solid #c6c6c680; */
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  padding-bottom: 15px;
+  position: relative;
+  background-size: 100% 100%;
+  z-index: 1;
+  opacity: 0.15;
+  scale: 1.03;
+  translate: 0px 60px;
+  filter: blur(6px);
+  transition: all 700ms cubic-bezier(0, 0.49, 0.44, 1), opacity 700ms linear, filter 700ms linear;
+}
+.card > .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.card > .bg-overlay {
+  background: #1d212759;
+  z-index: -1;
+}
+.card.loaded {
+  scale: 1;
+  opacity: 0.85;
+  translate: 0px 0px;
+  filter: blur(0px);
+  /* .card-button {
+      .title {
+        translate: 0% 0%;
+      }
+      > .icon {
+        clip-path: circle(50%);
+        > svg {
+          clip-path: inset(0% 0% 0% 0%);
+        }
+      }
+    } */
+}
+.card:hover:not(.stack-card) {
+  z-index: 100;
+  opacity: 1;
+}
+.card:hover:not(.stack-card) .card-button .title {
+  color: #ffff99;
+}
+.card:hover:not(.stack-card) .card-button > .icon {
+  background-color: #ffff99;
+}
+.card .card-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.card .card-button .title {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.card .card-button > .icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(50%);
+}
+.card .card-button > .icon > svg {
+  clip-path: inset(0% 0% 0% 0%);
+}
+@media only screen and (max-width: 1439px) {
+  .card {
+    padding: 16px;
+  }
+  .card .card-button > .icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  transition-duration: 400ms;
+}

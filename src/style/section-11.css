@@ -1,0 +1,49 @@
+#section-11 > .reveal {
+  margin-bottom: 50px;
+}
+#section-11 > .sign-up-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 130px;
+}
+#section-11 > .sign-up-container > .sign-up-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#section-11 > .sign-up-container > .sign-up-box > .email-input {
+  font-size: 22px;
+  line-height: 40px;
+  border-bottom: none;
+}
+#section-11 > .sign-up-container > .sign-up-box > .email-input-bottom-line {
+  height: 1px;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 36px;
+}
+#section-11 > .sign-up-container > .sign-up-box > .sign-up-footer {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 60px;
+}
+@media only screen and (max-width: 1439px) {
+  #section-11 > .reveal {
+    margin-bottom: 16px;
+  }
+  #section-11 > .sign-up-container > .sign-up-box > .email-input {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  #section-11 > .sign-up-container > .sign-up-box > .email-input {
+    font-size: 18px;
+  }
+  #section-11 > .sign-up-container > .sign-up-box > .sign-up-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: baseline;
+  }
+}

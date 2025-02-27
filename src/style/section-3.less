@@ -1,0 +1,60 @@
+// Section-3
+#section-3 {
+  > .block-quote {
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 139px;
+    position: relative;
+    > .block-scroll-type {
+      position: absolute;
+      top: 0;
+    }
+  }
+  > .photo {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-end;
+    justify-content: right;
+    margin-bottom: 243px;
+    > .image {
+      position: relative;
+      z-index: 1;
+    }
+    > .description {
+      font-size: 18px;
+      line-height: 26px;
+      color: white;
+      width: 312px;
+    }
+  }
+  @media only screen and (max-width: 1439px) {
+    > .block-quote {
+      margin-bottom: 100px;
+      font-size: 36px;
+      line-height: 50px;
+    }
+    > .photo {
+      margin-bottom: 200px;
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    > .block-quote {
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 72px;
+    }
+    > .photo {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 148px;
+      margin-bottom: 120px;
+      >.description {
+        font-size: 16px;
+        line-height: 22px;
+        width: 220px;
+      }
+    }
+  }
+}

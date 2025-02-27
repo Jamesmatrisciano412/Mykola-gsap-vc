@@ -1,0 +1,73 @@
+.stack-card {
+  border-radius: 8px;
+  border: 1px solid #c6c6c6;
+  display: flex;
+  padding: 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1368px;
+  height: 268px;
+  color: white;
+  background-color: #1d2127e5;
+  transition: none;
+}
+.stack-card > .no {
+  flex: 1;
+  font-size: 52px;
+  line-height: 62px;
+}
+.stack-card > .title {
+  flex: 1;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.stack-card > .description {
+  flex: 2;
+  font-size: 18px;
+  line-height: 26px;
+}
+.stack-card:hover {
+  z-index: initial;
+  opacity: 0.85;
+}
+@media only screen and (max-width: 1439px) {
+  .stack-card {
+    padding: 20px;
+    width: 984px;
+  }
+  .stack-card > .no {
+    flex: 1;
+  }
+  .stack-card > .title {
+    flex: 2;
+  }
+  .stack-card > .description {
+    flex: 4;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .stack-card {
+    flex-direction: column;
+    width: 372px;
+    height: 372px;
+    padding: 16px;
+  }
+  .stack-card > .no {
+    font-size: 36px;
+    line-height: 58px;
+    flex: 0;
+  }
+  .stack-card > .title {
+    font-size: 24px;
+    line-height: 32px;
+    flex: 0;
+    margin-bottom: 16px;
+  }
+  .stack-card > .description {
+    flex: 1;
+  }
+}

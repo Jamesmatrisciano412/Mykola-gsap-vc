@@ -1,0 +1,15 @@
+#section-12 > .reveal {
+  margin-bottom: 38px;
+}
+#section-12 > .card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-bottom: 200px;
+}
+@media only screen and (max-width: 1023px) {
+  #section-12 > .card-group {
+    gap: 72px;
+    margin-bottom: 172px;
+  }
+}

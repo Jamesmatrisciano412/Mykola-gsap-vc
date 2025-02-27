@@ -1,0 +1,97 @@
+.first-card {
+  color: white;
+  align-items: baseline;
+  justify-content: flex-end;
+  height: 328px;
+  width: 672px;
+  overflow: hidden;
+  &.big-card {
+    height: 480px;
+  }
+  > .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  pre {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    text-wrap: wrap;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 4px;
+    font-weight: 400;
+    width: 100%;
+  }
+  > .card-footer {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    > .tag-list {
+      flex-grow: 1;
+      display: flex;
+      gap: 48px;
+      justify-content: flex-start;
+      align-items: center;
+      transition: all 400ms ease-in-out;
+    }
+  }
+  &:hover {
+    > .card-footer {
+      > .tag-list {
+        color: #adc5ff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1439px) {
+  .first-card {
+    width: 480px;
+    height: 340px;
+    &.big-card {
+      height: 380px;
+    }
+    pre {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    > .card-footer {
+      gap: 70px;
+      > .tag-list {
+        gap: 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .first-card {
+    width: 369px;
+    height: 400px;
+    &.big-card {
+      height: 400px;
+    }
+    > .card-footer {
+      gap: 70px;
+      > .tag-list {
+        gap: 30px;
+        > div:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}

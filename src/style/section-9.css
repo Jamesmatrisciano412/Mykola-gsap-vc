@@ -1,0 +1,49 @@
+#section-9 > .reveal {
+  margin-bottom: 38px;
+}
+#section-9 > .card-group {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 200px;
+}
+#section-9 > .card-group > .card-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#section-9 > .card-group > .card-column > .first-card > pre {
+  width: 532px;
+}
+#section-9 > .card-group > .card-column > .first-card > h4 {
+  width: 624px;
+}
+@media only screen and (max-width: 1439px) {
+  #section-9 > .card-group > .card-column > .first-card > pre {
+    width: 448px;
+  }
+  #section-9 > .card-group > .card-column > .first-card > h4 {
+    width: 440px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  #section-9 > .card-group {
+    flex-direction: column;
+    gap: 72px;
+    margin-bottom: 172px;
+  }
+  #section-9 > .card-group > .card-column {
+    gap: 72px;
+  }
+  #section-9 > .card-group > .card-column > .first-card > pre {
+    width: 100%;
+  }
+  #section-9 > .card-group > .card-column > .first-card > h4 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #section-9 > .card-group > .card-column > .first-card > .card-footer {
+    margin-top: 30px;
+  }
+}

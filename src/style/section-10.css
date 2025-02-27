@@ -1,0 +1,50 @@
+#section-10 > .reveal {
+  margin-bottom: 38px;
+}
+#section-10 > .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  margin-bottom: 60px;
+  position: relative;
+}
+#section-10 > .content > .png-sequence {
+  width: 852px;
+  height: 852px;
+}
+#section-10 > .content > .png-sequence > .image {
+  width: 100%;
+  height: 100%;
+}
+#section-10 > .content > .description {
+  position: absolute;
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 500;
+  width: 568px;
+  text-align: center;
+  color: white;
+}
+@media only screen and (max-width: 1439px) {
+  #section-10 > .content {
+    margin-top: 128px;
+  }
+  #section-10 > .content > .description {
+    width: 568px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  #section-10 > .content {
+    margin: 140px 0px;
+  }
+  #section-10 > .content > .png-sequence {
+    width: 370px;
+    height: 370px;
+  }
+  #section-10 > .content > .description {
+    font-size: 28px;
+    line-height: 36px;
+    width: 369px;
+  }
+}

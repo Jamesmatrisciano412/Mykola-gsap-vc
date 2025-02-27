@@ -1,0 +1,33 @@
+#section-2 > .reveal {
+  margin-bottom: 38px;
+}
+#section-2 > .card-group {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 200px;
+}
+#section-2 > .card-group > .card-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media only screen and (max-width: 1439px) {
+  #section-2 > .reveal {
+    margin-bottom: 36px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  #section-2 > .reveal {
+    margin-bottom: 40px;
+  }
+  #section-2 > .card-group {
+    flex-direction: column;
+    gap: 72px;
+    margin-bottom: 172px;
+  }
+  #section-2 > .card-group > .card-column {
+    gap: 72px;
+  }
+}

@@ -1,0 +1,49 @@
+.sectional-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.sectional-button-wrapper > .sectional-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  position: relative;
+  cursor: pointer;
+  height: 50px;
+}
+.sectional-button-wrapper > .sectional-button > .label {
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: #ffff7f;
+}
+.sectional-button-wrapper > .sectional-button > .icon {
+  background: #ffff99;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+.sectional-button-wrapper > .sectional-button > .icon > svg > path {
+  stroke-width: 1.5px;
+  stroke: black;
+}
+@media only screen and (max-width: 1439px) {
+  .sectional-button-wrapper > .sectional-button {
+    gap: 16px;
+  }
+  .sectional-button-wrapper > .sectional-button > .label {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .sectional-button-wrapper > .sectional-button > .icon {
+    width: 32px;
+    height: 32px;
+  }
+}

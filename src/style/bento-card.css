@@ -1,0 +1,26 @@
+.bento-card {
+  color: #adc5ff;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d2127a6;
+}
+.bento-card.loaded {
+  opacity: 1;
+}
+.bento-card > .bg-overlay {
+  background-color: #161c23;
+  transition: all 100ms ease-in-out;
+}
+.bento-card:hover > .bg-overlay {
+  background-color: #1a1f25;
+}
+.bento-card:hover::before,
+.bento-card:hover::after {
+  content: "";
+  position: absolute;
+  inset: -1.25px;
+  z-index: -3;
+  background: conic-gradient(from var(--gradient-angle), #7099ff, #5282FF, #7099ff);
+  border-radius: inherit;
+  animation: border-rotation 5s linear infinite;
+}

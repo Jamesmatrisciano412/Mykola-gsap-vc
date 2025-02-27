@@ -1,0 +1,133 @@
+#section-7 {
+  > .reveal {
+    margin-bottom: 33px;
+  }
+  > .content {
+    position: relative;
+    margin-bottom: 80px;
+    > .mid-line {
+      position: absolute;
+      left: 50%;
+      width: 1px;
+      background-image: linear-gradient(
+        #ffffff00 0%,
+        #ffffffff 200px,
+        #ffffffff calc(100% - 200px),
+        #ffffff00 100%
+      );
+      clip-path: inset(0% -20px calc(100% - 10px));
+      > .point {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        margin-left: -5px;
+        &.point-1 {
+          margin-top: 697px;
+        }
+        &.point-2 {
+          margin-top: 630px;
+        }
+        &.point-3 {
+          margin-top: 643px;
+        }
+        &.point-4 {
+          margin-top: 618px;
+          visibility: hidden;
+        }
+      }
+    }
+    > .boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 193px;
+      padding: 60px 92px 160px;
+      > .box {
+        display: flex;
+        flex-direction: column;
+        background: #161e29;
+        border: 1px solid #ffffff;
+        padding: 24px;
+        color: white;
+        width: 464px;
+        border-radius: 8px;
+        > .png-sequence {
+          width: 414px;
+          height: 148px;
+          margin: 30px 0px;
+        }
+        &:nth-child(even) {
+          align-self: flex-start;
+          > .number {
+            align-self: flex-end;
+          }
+        }
+        &:nth-child(odd) {
+          align-self: flex-end;
+        }
+        .number {
+          font-size: 52px;
+          line-height: 62px;
+        }
+        > .image {
+          margin-top: 40px;
+          margin-bottom: 24px;
+        }
+        .title {
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 36px;
+        }
+        > .content {
+          margin-top: 7px;
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1439px) {
+    > .content {
+      > .boxes {
+        padding: 140px 0px;
+        > .box {
+          width: 456px;
+          padding: 20px;
+          .number {
+            font-size: 48px;
+            line-height: 48px;
+          }
+          > .content {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    > .content {
+      margin-bottom: 30px;
+      > .mid-line {
+        > .point {
+          visibility: hidden;
+          &.point-4 {
+            margin-top: 540px;
+          }
+        }
+      }
+      > .boxes {
+        > .box {
+          width: 370px;
+          align-self: stretch;
+          background: #1d2127d9;
+          > .png-sequence {
+            margin: 24px 0px;
+            width: 336px;
+            height: 120px;
+          }
+        }
+      }
+    }
+  }
+}

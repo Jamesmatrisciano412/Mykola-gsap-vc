@@ -1,0 +1,6 @@
+#cursor {
+  translate: -50% -50%;
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(83px);
+}

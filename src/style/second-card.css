@@ -1,0 +1,86 @@
+.second-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 232px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.second-card > .bg-overlay {
+  background-color: #1d2127a6;
+}
+.second-card > .image {
+  width: 204px;
+  height: 137px;
+}
+.second-card .short-desc {
+  font-weight: 500;
+  width: 348px;
+  color: white;
+}
+.second-card > .info-col {
+  width: 541px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-between;
+  height: 100%;
+}
+.second-card > .info-col > .card-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.second-card:hover > .info-col > .card-footer {
+  color: #adc5ff;
+}
+@media only screen and (max-width: 1439px) {
+  .second-card {
+    line-height: 22px;
+  }
+  .second-card > .info-col {
+    width: 650px;
+  }
+  .second-card > .info-col .short-desc {
+    width: 480px;
+  }
+  .second-card > .info-col .long-desc {
+    width: 564px;
+  }
+  .second-card > .info-col > .card-footer {
+    gap: 40px;
+  }
+  .second-card > .info-col > .card-footer .card-button {
+    flex: 1;
+    justify-content: end;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .second-card {
+    flex-direction: column;
+    height: unset;
+  }
+  .second-card > .image {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 200px;
+  }
+  .second-card > .info-col {
+    width: 100%;
+  }
+  .second-card > .info-col > .short-desc {
+    width: 100%;
+    margin-bottom: 9px;
+  }
+  .second-card > .info-col > .long-desc {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 176px;
+  }
+  .second-card > .info-col > .card-footer .tag1,
+  .second-card > .info-col > .card-footer .tag2 {
+    display: none;
+  }
+}

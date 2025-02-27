@@ -1,0 +1,9 @@
+#section-6 > .reveal {
+  margin-bottom: 38px;
+}
+#section-6 > .card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 200px;
+}

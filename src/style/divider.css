@@ -1,0 +1,15 @@
+.divider {
+  margin-bottom: 260px;
+  height: 1px;
+  background: linear-gradient(90deg, #7099ff, #5282FF);
+}
+@media only screen and (max-width: 1439px) {
+  .divider {
+    margin-bottom: 200px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .divider {
+    margin-bottom: 172px;
+  }
+}

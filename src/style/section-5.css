@@ -1,0 +1,42 @@
+#section-5 > .reveal {
+  margin-bottom: 32px;
+}
+#section-5 > .subtitle {
+  margin-bottom: 30px;
+}
+#section-5 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  perspective: 175px;
+  perspective-origin: 50% 100%;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+#section-5 .content > .stack-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  color: white;
+}
+#section-5 .sectional-button-wrapper {
+  margin-top: 50px;
+  margin-bottom: 3000px;
+}
+@media only screen and (max-width: 1023px) {
+  #section-5 > .subtitle {
+    margin-bottom: 0px;
+  }
+  #section-5 .content {
+    height: 700px;
+  }
+  #section-5 .content > .stack-card {
+    top: 44%;
+  }
+  #section-5 .sectional-button-wrapper {
+    margin-top: -30px;
+    margin-bottom: 2780px;
+  }
+}
